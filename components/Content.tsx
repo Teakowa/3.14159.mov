@@ -7,14 +7,16 @@ export default function Content() {
     const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?version=3&autoplay=0&enablejsapi=1&&loop=1&&playlist=${videoId}`;
 
     return (
-      <div className="w-full h-0 relative" style={{ paddingBottom: "56.25%" }}>
-        <iframe
-          className="absolute top-0 left-0 w-full h-full"
-          src={videoUrl}
-          title="YouTube video player"
-          allow="accelerometer; autoplay *; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-        ></iframe>
+      <div className="w-full relative pb-[56.25%]">
+        <div className="absolute top-0 left-0 w-full h-full">
+          <iframe
+            className="w-full h-full"
+            src={videoUrl}
+            title="YouTube video player"
+            allow="accelerometer; autoplay *; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
     );
   };
