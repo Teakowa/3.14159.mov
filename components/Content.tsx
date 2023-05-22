@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Content() {
   const YouTubePlayer = ({ videoId }: { videoId: string }) => {
-    const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?version=3&autoplay=0&enablejsapi=1&&loop=1&&playlist=${videoId}`;
+    const videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?version=3&autoplay=1&enablejsapi=1&&loop=1&&playlist=${videoId}`;
 
     return (
       <div className="w-full relative pb-[56.25%]">
