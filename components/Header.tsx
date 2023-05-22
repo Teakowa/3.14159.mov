@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import pi from "../public/pi.png";
+import Github from "@/components/GitHub";
 
 export default function Header() {
   const [top, setTop] = useState(true);
@@ -45,7 +46,7 @@ export default function Header() {
                   href="https://github.com/Teakowa/3.14159.mov"
                   className="flex items-center justify-center rounded border-none bg-gray-900 p-4 py-2 text-sm text-gray-200 shadow-sm transition-colors hover:bg-gray-800"
                 >
-                  <span>GitHub</span>
+                  <Github />
                 </Link>
               </li>
             </ul>
