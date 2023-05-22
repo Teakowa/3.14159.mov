@@ -30,7 +30,7 @@ export default function Header() {
             <Link href="/" className="block" aria-label="Cruip">
               <div className="flex items-center">
                 <Image className="h-10 w-auto" src={pi} alt="pi" />
-                <span className="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-2xl font-bold text-transparent ml-2">
+                <span className="bg-gradient-to-r from-orange-500 to-orange-700 bg-clip-text text-2xl font-bold text-transparent ml-2">
                   .mov
                 </span>
               </div>
